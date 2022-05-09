@@ -1,0 +1,5 @@
+<h2>Hey this is a server compontnt</h2>
+<input type="text" class="form-control" (input)="OnupdateUsername($event)">
+<p>{{userName}}</p>
+<input type="text" class="form-control" [(ngModel)]="userName">
+<button class="btn btn-primary"[disabled]="userName === '' "(click)="userName=''"> Reset User</button>
